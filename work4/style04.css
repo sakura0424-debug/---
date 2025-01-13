@@ -1,0 +1,625 @@
+*{
+    margin:0 ;
+    padding-right:0 ;
+}
+.w{
+    width:1920px;
+    margin:auto;
+}
+.box1{
+    height:2290px;
+    background:#ffffff;
+    position:relative;
+}
+.box2{
+    height:50px;
+    background:#ffffff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.sg{
+    width:22px;
+    height:15px;
+    float:left;
+}
+@keyframes sg{
+    from{transform: scale(1, 1);}
+    to{transform: scale(0.5, 0.5);}
+}
+sg:hover{
+    animation-name:sg;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+.fdj{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-right:10px
+}
+.sxj{
+    width:200px;
+    height:200px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E6%A0%87.png);
+    position:absolute;
+    top:0;
+    left:860px;
+}
+@keyframes sxj{
+    0%{transform:scale(1,1);}
+    50%{transform:scale(1.1,1.1);}
+    100%{transform:scale(1,1);}
+}
+sxj:hover{
+    animation-name:sxj;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.box3{
+    height:929px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
+}
+.text1{
+    width:640px;
+    height:85px;
+    font-family:Cambria ;
+    font-size:72px ;
+   color:#2a3f17;
+   position:absolute;
+   left:594px;
+   top:287px;
+   float:left;
+overflow-y: hidden;
+}
+.text2{
+    width:1025px;
+    height:105px;
+    font-family:微软雅黑 ;
+    font-size:30px ;
+    color:#233516;
+    position:absolute;
+    left:460px;
+    top:378px;
+}
+.button1{
+    width:262px;
+    height:72px;
+    background:#2a3f17;
+    font-family:Cambria ;
+    font-size: 30px;
+    color:#ffffff;
+    position:absolute;
+    left:460px;
+    top:606px;
+}
+.lj1{
+    position:absolute;
+    left:70px;
+    top:20px;
+}
+ .box3 a{
+    text-decoration: none; 
+    color: #ffffff;
+}
+.traslation{
+    height:605px;
+    background-color:#f8f8f8;
+}
+.box4{
+    width:1115px;
+    height:500px;
+    position:absolute;
+    left:405px;
+    top:785px;
+}
+@keyframes tx{
+    from{transform: translate(0,0);}
+   to{transform: translate(0,-50px);}
+}
+tx:hover{
+    animation-name: tx;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.tx1{
+    width:333px;
+    height:500px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.tx2{
+    width: 333px;
+    height: 499px;
+    background: url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
+    position: absolute;
+    bottom: 0;
+    left:390px ;
+}
+.tx3 {
+    width: 333px;
+    height: 498px;
+    background: url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
+    position: absolute;
+    bottom: 0;
+    right:0 ;
+}
+.text3-1{
+    font-family: Cambria;
+    font-size:48px ;
+    color:#ffffff;
+    position:absolute;
+    left:205px;
+    top:356px;
+}
+.text3-2 {
+    font-family: Cambria;
+    font-size: 48px;
+    color: #ffffff;
+    position: absolute;
+    left: 176px;
+    top: 356px;
+}
+.text3-3 {
+    font-family: Cambria;
+    font-size: 48px;
+    color: #ffffff;
+    position: absolute;
+    left: 147px;
+    top: 356px;
+}
+.box5{
+    height:760px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+    
+}
+@keyframes introduce{
+    from{transform: translate(0,0);}
+    to{transform: translate(0, -50px);}
+}
+introduce:hover{
+    animation-name: introduce;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+@keyframes button2{
+    from{transform: scale(1, 1);}
+    to{transform:scale(0.8,0.8);}
+}
+button2:hover{
+    animation-name: button2;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+}
+.box6{
+    width:946px;
+    height:541px;
+    background:#e0dfdf;
+    position:absolute;
+    left:500px;
+    bottom:270px;
+}
+.box6-1{
+    width:794px;
+    height:231px;
+    position:absolute;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E2%80%9CFamily%20Farms%20is%20the%20best%20place%EF%BC%8Cwhere%20I%20can%20buy%20fruit,vegetable.png);
+    left:77px;
+    top:77px;
+}
+.button2{
+    width: 197px;
+        height: 70px;
+        background: #2a3f17;
+        font-family: 微软雅黑;
+        font-size: 30px;
+        color: #ffffff;
+        position: absolute;
+        left: 375px;
+        top: 410px;
+}
+ .box5 a {
+     text-decoration: none;
+     color: #ffffff;
+ }
+ .lj2 {
+     position: absolute;
+     left:38px ;
+     top:17px ;
+ }
+ .background {
+     background-color: #f8f8f8;
+ }
+ .box7{
+    height:810px;
+ }
+ .box7-1{
+    height:300px;
+    position:relative;
+ }
+ @keyframes border{
+    0%{border:0,0,0;}
+    25%{border-top:5px solid #2a3f17;}
+    50%{border-top: 5px solid #2a3f17;
+    border-right: 5px solid #2a3f17}
+    75%{border-top: 5px solid #2a3f17;
+    border-right: 5px solid #2a3f17;
+border-bottom: 5px solid #2a3f17;}
+100%{border: 5px solid #2a3f17}
+ }
+ border:hover{
+    animation-name:border;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+ }
+ .text4{
+    width:245px;
+    height:57px;
+    font-family:微软雅黑 ;
+    font-size:48px ;
+    color:#2a3f17;
+    position:absolute;
+    left:850px;
+    top:150px;
+ }
+ .box7-2{
+    width:1150px;
+    height:415px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+ 
+ }
+ .tx4{
+    width:264px;
+    height:415px;
+    background:#e0dfdf;
+    float:left;
+    position:relative;
+ }
+ .tx5 {
+     width: 262px;
+     height: 415px;
+     background: #e0dfdf;
+     float: left;
+    position: relative;
+ }
+ .tx6 {
+     width: 262px;
+     height: 415px;
+     background: #e0dfdf;
+     float: left;
+    position: relative;
+ }
+ .tx7 {
+     width: 261px;
+     height: 415px;
+     background: #e0dfdf;
+     float: left;
+    position: relative;
+ }
+ .p1{
+    width:264px;
+    height:261px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E9%A9%AC.png);
+ }
+ .text5-1{
+    font-family:微软雅黑 ;
+    font-size: 30px;
+    color:#2a3f18;
+    position:absolute;
+    left:93px;
+    top:296px;
+ }
+ .text6{
+    font-family:微软雅黑 ;
+    font-size: 21.85px;
+    position: absolute;
+    left:42px;
+    bottom:42px;
+    border-bottom: 2px solid #2a3f18;;
+ }
+ .box7-2  a{
+    text-decoration: none ;
+    color:#2a3f18;
+ }
+ .p2{
+     width: 262px;
+     height: 261px;
+     background: url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png);
+ }
+ .p3 {
+     width: 262px;
+     height: 260px;
+     background: url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E7%8B%AE%E5%AD%90.png);
+ }
+ .p4 {
+     width: 261px;
+     height: 259px;
+     background: url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%B8%9F.png);
+ }
+ .text5-2 {
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f18;
+    position: absolute;
+    left: 67px;
+    top: 296px;
+ }
+ .text5-3 {
+     font-family: 微软雅黑;
+     font-size: 30px;
+     color: #2a3f18;
+     position: absolute;
+     left: 103px;
+     top: 296px;
+ }
+ .text5-4 {
+     font-family: 微软雅黑;
+     font-size: 30px;
+     color: #2a3f18;
+     position: absolute;
+     left: 33px;
+     top: 296px;
+ }
+ .box7-3{
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+ }
+ @keyframes button3{
+    from{background-color:#f8f8f8 ;}
+    to {background-color: #2a3f18;}
+ }
+ button3:hover{
+    animation-name: button3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+   }
+   
+ .border{
+    width:360px;
+    height:70px;
+    border:3px solid #2a3f18;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+ .button3{
+    font-family: 微软雅黑;
+        font-size: 30px;
+        color: #2a3f18;
+ }
+ .button3 a{
+    text-decoration: none;
+        color: #2a3f18;
+ }
+ .box8{
+    height:1350px;
+    position: relative;
+ }
+ .box8-1{
+    width:702px;
+    height:1020px;
+    background:url(https://sakurastypora.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png);
+    position:absolute;
+    left:255px;
+    top:200px;
+
+ }
+ .box8-2{
+    width:830px;
+    height:950px;
+    position:absolute;
+    left:957px;
+    top:90px;
+ }
+ .box8-2-1{
+    width:830px;
+    height:345px;
+    position:relative;
+ }
+ .text7-1{
+    font-family: 微软雅黑;
+        font-size: 36px;
+        color: #2a3f18;
+        position: absolute;
+        left:128px;
+        top: 90px;
+ }
+ @keyframes wb1{
+    from{transform: translateY(0);}
+    to{transform:translateY(-30px);}
+ }
+ wb1:hover{
+    animation-name: wb1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+ }
+ .text7-2 {
+    width:542px;
+    height:146px;
+     font-family: 微软雅黑;
+     font-size: 24px;
+     color: #2a3f18;
+     position: absolute;
+     left: 128px;
+     top: 160px;
+    }
+    @keyframes wb2{
+        from{transform: scale(1,1);}
+        to{transform: scale(1.2,1.2);}
+    }
+    wb2:hover{
+        animation-name: wb2;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+    }
+ .box8-2-2{
+    width:830px;
+    height:700px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: space-between;
+ }
+ .yq{
+    width:72px;
+    height:72px;
+    display:inline-block;
+    border-radius:50%;
+    border:3px solid;
+    border-color:#2a3f18;
+    font:48px 微软雅黑 Regular;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .text8{
+
+    font-family: 微软雅黑;
+        font-size: 24px;
+        color: #2a3f18;
+        float:right;
+        margin-left:25px;
+ }
+ @keyframes ss{
+    from{transform: translateX(0);}
+    to{transform: translate(60px);}
+ }
+ ss:hover{
+    animation-name: ss;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+ }
+ .ss1{
+    width:400px;
+    height:100px;
+    float:left;
+    margin-left: 128px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+ }
+ .ss2 {
+     width: 400px;
+     height: 100px;
+    float: left;
+        margin-left: 128px;
+        display: flex;
+            justify-content:flex-start;
+            align-items: center;
+ }
+ .ss3 {
+     width: 400px;
+     height: 100px;
+    float: left;
+        margin-left: 128px;
+        display: flex;
+            justify-content: flex-start;
+            align-items: center;
+ }
+ .ss4 {
+     width: 400px;
+     height: 100px;
+    float: left;
+        margin-left: 128px;
+        display: flex;
+            justify-content: flex-start;
+            align-items: center;
+ }
+ .box9{
+    height:460px;
+    border-top:3px solid #000000 ;
+    background:#ffffff;
+    position: relative;
+ }
+ .box9-1{
+    width:270px;
+    height:140px;
+    position: absolute;
+    left:440px;
+    top:170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: space-between;
+ }
+ .text9-1{font-family: 微软雅黑;
+    font-size: 40px;
+    color: #2a3f18;
+ }
+ .box9-2{
+    width:200px;
+    height:145px;
+    position: absolute;
+    left:745px;
+    top:177px;
+ }
+ .text9-2{
+    margin-top:3px;
+    font-family: 微软雅黑;
+        font-size: 30px;
+        color: #2a3f18;
+ }
+ .xs{
+    width: 200px;
+        height: 75px;
+        position: absolute;
+        bottom: 20px;
+    display: flex;
+        justify-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+ }
+ .text9-3{
+    font-family: 微软雅黑;
+        font-size: 24px;
+        color: #2a3f18;
+ }
+ .box9-3{
+    width:365px;
+    height:75px;
+    background: #949f8b;
+    position:absolute;
+    left:1230px;
+    top:195px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .text9-4{
+    font-family: 微软雅黑;
+        font-size: 36px;
+        color: #ffffff;
+ }
+ .box9-3 a{
+    text-decoration: none;
+    color:#ffffff;
+ }
+ @keyframes button4{
+    0%{transform: translateY(0);background-color: #949f8b;}
+    100%{transform: translateY(-30px);background-color: #ffffff;}
+
+ }
+ button4:hover{
+    animation-name: button4;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+ }
+ @keyframes text2{
+  from{color:#ffffff;}
+  to{color:#949f8b;}
+ }
+ button4 a:hover{
+    animation-name:text2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+ }
