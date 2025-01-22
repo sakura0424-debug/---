@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>作业1</title>   
+    </head>
+    <body>
+        <form>
+            请输入一个字符串：
+            <input type="text" id="parentStr"/><br/>
+            请输入一个字串：
+            <input type="text" id="childStr"/><br/>
+            <input type="button" id="button" value="提交"/><br/>
+        </form>
+        子串出现的次数为：<br/>
+        <div id="box1"></div>
+        <script>
+            "use strict"
+            const btn=document.getElementById("button");
+            btn.onclick=function(){
+            /*获取输入数据*/
+            const pStr=document.getElementById("parentStr").value;
+            const cStr = document.getElementById("childStr").value;
+            const num2=(searchStr(pStr, cStr));
+            console.log(num2);
+            document.getElementById("box1").innerHTML=(num2);
+            }
+            /*设计子串计数函数*/
+            function searchStr(parentStr,childStr){
+                if(typeof(parentStr)!=="string"||typeof(childStr)!=="string")
+            {
+                return alert("请输入字符串");
+            }
+                if(parentStr.length<childStr.length)
+            {
+                return alert("输入有误");
+            }
+            let num=0;
+                for(let i=0;i<parentStr.length;i++ ){
+                    let m=i;
+                    let TOF = true;
+                    for(let n=0;n<childStr.length;n++,m++){
+                        if(parentStr[m]!==childStr[n])
+                    {
+                        TOF=false;
+                        break;
+                    }
+                    }
+                    if(TOF)
+                    {
+                        num++;
+                    }
+                }
+                return num;
+            }
+        </script>
+    </body>
+</html>

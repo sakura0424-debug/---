@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>作业2</title>
+        <link rel="stylesheet" href="修饰.css"/>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box3">
+               <lebel for="email" class="position">邮箱</lebel><br />
+                <input type="text" id="email"  placeholder="请输入邮箱" class="position"/><br />
+                <lebal for="password" class="position">密码</lebal><br />
+                <input type="password" id="password"  placeholder="请输入密码" class="position"/><br />
+                <input type="button" value="提交" id="button"><br/>
+            </div>
+            <div class="box2" id="box2"></div>
+        </div>
+        <script>
+            "use strict"
+            let msg = [{
+                    name: '张三',
+                    age: 20,
+                    strengths: 'JavaScript',
+                    avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+                    email: 'yunding@qq.com',
+                    password: 33333
+                },
+                {
+                    name: '李四',
+                    age: 19,
+                    strengths: 'python',
+                    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+                    email: '12345678@163.com',
+                    password: 11111
+                },
+                {
+                    name: '王五',
+                    age: 18,
+                    strengths: 'Java',
+                    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+                    email: 'yundingshuyuan@qq.cn',
+                    password: 222222
+                },
+                ]
+                const btn = document.getElementById("button");
+                btn.onclick=function(){
+                     const email = document.getElementById("email").value;
+                     const password = Number(document.getElementById("password").value);
+                     console.log(typeof (password));
+                     console.log(typeof (email));
+                     const emailRegex =  /^(.*?)(@qq|@163)\.com$|^(.*?)(@qq|@163)\.cn$/;
+                     console.log(emailRegex.test(email));
+                    if(!emailRegex.test(email))
+                    {
+                    alert("输入邮箱格式有误");
+                    }
+                    else{
+                for (let i = 0; i < msg.length; i++)
+                {
+                   let eml=msg[i].email;
+                    let pwd=msg[i].password;
+                    console.log(eml); 
+                     console.log(pwd);
+                    console.log(email===eml);
+                      console.log(password===pwd);
+                    if(email===eml&&password===pwd)
+                {
+                    alert("登录成功")
+                    console.log(msg[i].avatar)
+                   box2.insertAdjacentHTML("beforeend",
+                   `
+                   <p><strong>用户信息</p></strong>
+                   <span><img  class="tx" src="${msg[i].avatar}" /></span>
+                   <p><strong>姓名:</strong> ${msg[i].name}</p>
+                <p><strong>年龄:</strong> ${msg[i].age}</p>
+                <p><strong>特长:</strong> ${msg[i].strengths}</p>
+                `
+                )
+                break;
+                }
+                }
+                }
+            }
+            
+                
+
+        </script>
+    </body>
+</html>
