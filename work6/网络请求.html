@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>网络请求</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    网络请求：<div id="time"></div>
+    <button onclick="getCurrentTime()">获取当前时间</button><br/>
+        <lebel for="username">账号：</lebel>
+        <input id="username" type="text" /><br/>
+        <lebel for="password">密码：</lebel>
+        <input id="password" type="password"><br/>
+        <button id="btn1">注册</button>
+        <button id="btn2">获取用户列表</button>
+        <div id="userlist"></div>
+    <script>
+        /*时间*/
+        const baseUrl = 'https://apifox.com/apidoc/shared-63b16e01-e6f5-45c4-b98b-7949f2888ceb';
+            function getCurrentTime(){
+                axios.get({url:'http://43.143.169.168:9090/time/now',
+                headers: { "Authorization":"http://43.143.169.168:9090/time/now"}
+
+                })
+                    .then((result) => {
+                        document.getElementByIdtime("time").innerText = response.data;
+                        console.log(result);
+                        console.log(status);
+                    })
+                    .catch(error => {
+                        console.error('获取当前时间失败:', error);
+                        console.log(status);
+                    });
+            }
+        const btn1 = document.getElementById("btn1");
+        const btn2 = document.getElementById("btn2");
+        /*注册*/
+        btn1.onclick=function(){
+            const username=document.getElementById("username").value;
+            const password=document.getElementById("password").value;
+            axios({
+                 headers: { "Authorization": "http://43.143.169.168:9090/user/register" },
+                 method:"post",
+                url:"http://43.143.169.168:9090/user/register",
+                data:{
+                    
+                    username,
+                    password
+                }
+            })
+                .then((result) => {
+                    alert('注册成功!');
+                    console.log(status);
+                })
+                .catch(error => {
+                    console.error('注册失败:', error);
+                    console.log(status);
+                    alert('注册失败,请检r查您的输入或稍后重试。');
+                })
+    }
+        btn2.onclick = function (){
+            axios.get({url:"http://43.143.169.168:9090/user/all",
+            headers: { "Authorization": "http://43.143.169.168:9090/user/all" },
+            }).then(response => {
+                console.log(status);
+                console.log('获取用户列表请求报文:', response);
+                const userlist=document.getElementById("userlist")
+                userlist.textContent=response.username+response.password;
+            }) .catch(error => {
+            console.error('获取用户列表失败:', error);
+            alert('获取用户列表失败');
+            console.log(status);
+            })
+            }
+    </script>
+</body>
+</html>
